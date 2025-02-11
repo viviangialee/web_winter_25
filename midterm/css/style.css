@@ -1,0 +1,23 @@
+body {
+    background-color: hsl(0, 0%, 83%);
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    border: 8px solid rgb(207, 207, 207);
+    padding: 50px;
+    background-color: rgb(228, 228, 228);
+   
+}
+ 
+.nav {
+    list-style:none;
+    text-align:center;
+}
+ 
+.nav li {
+    display:inline;
+    margin-right: 0px;
+}
+ 
