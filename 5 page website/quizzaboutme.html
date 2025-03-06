@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee | CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        #right-text {
+            text-align:right;
+        }
+        .fun-tools {
+            color:rgb(255, 255, 255);
+            text-align:center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quizzaboutme.html">Quizz</a></li>
+
+        </ul>
+       
+        </div>
+
+        <title>Vivian Lee - Biography</title>
+
+ 
+        
+    </head>
+    <body>
+    
+        <section>
+            <p  style="color:rgb(255, 255, 255); text-align: center; font-size: xx-large;">Welcome to a quizz about me!</p>
+            <p  style="color:rgb(255, 255, 255); text-align: center; font-size: x-large;">How well do you know me?</p>
+            <button onclick="showAnswer('age')">How old am I? Click me!</button>
+            <button onclick="showAnswer('birthday')">When is my birthday? Click me!</button>
+            <button onclick="showAnswer('color')">What is my favorite color? Click me!</button>
+            <button onclick="showAnswer('animal')">What is my favorite animal? Click me!</button>
+            <button onclick="showAnswer('class')">What is my favorite class this trimester? Click me!</button>
+            
+            <script>
+            function showAnswer(question) {
+              let answer;
+              let correctAnswer;
+              
+              if (question === "age") {
+                answer = prompt("How old am I?");
+                correctAnswer = "14";
+              } else if (question === "birthday") {
+                answer = prompt("When is my birthday?");
+                correctAnswer = "August 6th 2010";
+              } else if (question === "color") {
+                answer = prompt("What is my favorite color?");
+                correctAnswer = "Pink"; // Make sure to match case-insensitive comparison
+              }
+                else if (question === "animal") {
+                answer = prompt("What is my favorite animal?");
+                correctAnswer = "Koala"; // Make sure to match case-insensitive comparison
+              }
+                else if (question === "class") {
+                answer = prompt("What is my favorite class this trimester?");
+                correctAnswer = "Literary Thinking"; // Make sure to match case-insensitive comparison
+              }
+
+              if (answer && answer.trim().toLowerCase() === correctAnswer.toLowerCase()) {
+                alert("Correct!");
+              } else {
+                alert("Incorrect answer. Try again.");
+              }
+            }
+            </script>
+
+
+
+
+
+        </section>
+    
+    </body>
+    </html>
